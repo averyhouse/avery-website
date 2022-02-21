@@ -22,6 +22,10 @@ def constitution_update():
 def rotation_video():
     return render_template('rotation_video.html')
 
+@app.route('/valentine_video/')
+def valentines_video():
+    return render_template('valentines_video.html')
+
 @app.errorhandler(404)
 def page_not_found(err):
     return 'This route does not exist {}'.format(request.url), 404
