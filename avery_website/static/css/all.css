@@ -685,11 +685,8 @@ h6 {
     color: #a279b6
 }
 
-.navbar .container-top {
+.navbar .container {
     border-top: 0.1rem solid #a279b6;
-}
-
-.navbar .container-bottom {
     border-bottom: 0.1rem solid #a279b6
 }
 

@@ -22,7 +22,7 @@ def constitution_update():
 def rotation_video():
     return render_template('rotation_video.html')
 
-@app.route('/valentine_video/')
+@app.route('/valentines_video/')
 def valentines_video():
     return render_template('valentines_video.html')
 
