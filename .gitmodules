@@ -1,3 +1,4 @@
 [submodule "constitution"]
 	path = constitution
 	url = https://github.com/averyhouse/constitution
+	branch = master
