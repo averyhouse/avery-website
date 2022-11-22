@@ -2,6 +2,9 @@
 
 This is the official Avery House website. The branch `master` contains a very bare-bones version of the website which does not depend on any external APIs. The branch `maximal` contains a number of other features which are more maintenance-intensive, such as a music queue, a gallery which pulls photos from Facebook using the Facebook API, and an events page which pulls events from the Google calendar using the Google Calendar API.
 
+## Updating on server,
+We have a systemctl service just run `systemctl restart avery-website.service` to restart any changes. Also make sure to git pull on the server, don't do any code changes on the server, instead just do it locally, push to git and then git pull. When updating the constitution, just `git pull` in constitution folder and `cd ../` then run `pandoc constitution/constitution.md -o avery_website/templates/constitution-contents.html`.
+
 ## Development setup:
 First setup python:
 ### Python virtual environment (recommended)
