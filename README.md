@@ -7,6 +7,8 @@ We have a systemctl service just run `systemctl restart avery-website.service` t
 
 You might get some weird errors so you might need to `git pull` on `sudo su -l www-data -s /bin/bash`, this is not ideal, but I am too lazy to actually figure out what is causing the error.
 
+Also if you pull on your personal account, make sure to: `sudo chown -R www-data:webadmin ./*` in the git repo.
+
 ## Development setup:
 First setup python:
 ### Python virtual environment (recommended)
