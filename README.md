@@ -5,6 +5,8 @@ This is the official Avery House website. The branch `master` contains a very ba
 ## Updating on server,
 We have a systemctl service just run `systemctl restart avery-website.service` to restart any changes. Also make sure to git pull on the server, don't do any code changes on the server, instead just do it locally, push to git and then git pull. When updating the constitution, just `git pull` in constitution folder and `cd ../` then run `pandoc constitution/constitution.md -o avery_website/templates/constitution-contents.html`.
 
+You might get some weird errors so you might need to `git pull` on `sudo su -l www-data -s /bin/bash`, this is not ideal, but I am too lazy to actually figure out what is causing the error.
+
 ## Development setup:
 First setup python:
 ### Python virtual environment (recommended)
